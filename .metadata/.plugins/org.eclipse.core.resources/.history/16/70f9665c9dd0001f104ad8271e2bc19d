@@ -1,0 +1,26 @@
+
+public class CountOfWords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "This is JAva Java Based Program Program";
+		System.out.println(countofWords(str));
+		countOccurance(str);
+	}
+	
+	public static int countofWords(String word) {
+		
+		String[] newStr = word.split(" ");		
+		int count = 0;
+		for(String newS : newStr) {
+			count++;
+		}
+		return count;
+	}
+	
+	public static String countOccurance(String str) {
+		
+		return null;
+	}
+
+}
