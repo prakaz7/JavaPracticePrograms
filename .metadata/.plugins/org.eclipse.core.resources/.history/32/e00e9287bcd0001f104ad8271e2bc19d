@@ -9,7 +9,7 @@ public class CountOfWords {
 		String Original = "Programmingggg Javaaa";
 		System.out.println(countofWords(str));
 		System.out.println(countOccurance(str));
-		duplicateCharacters(Original);
+		System.out.println(duplicateCharacters(Original));
 	}
 	
 	public static int countofWords(String word) {
@@ -35,22 +35,17 @@ public class CountOfWords {
 		return map.toString();
 	}
 	
-	public static void duplicateCharacters(String str) {
+	public static String duplicateCharacters(String str) {
 		
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
 		for( char findSeq : str.toCharArray()) {
 			if(map.containsKey(findSeq)) {
-				map.put(findSeq, map.get(findSeq)+1);
+				map.put(findSeq, map.get(findSeq)+0);
 			}else {
 				map.put(findSeq, 1);
 			}
 		}
-		
-		for(Character value : map.keySet()) {
-			if(map.get(value)>1) {
-				System.out.println(value + " " +map.get(value));
-			}
-		}
+		return null;
 	}
 
 }
