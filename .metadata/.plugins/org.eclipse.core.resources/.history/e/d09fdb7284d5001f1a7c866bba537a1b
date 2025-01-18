@@ -1,0 +1,39 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AnagramsCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s1 = "Listen";
+		String s2 = "Silent";
+		
+		//Check whether the given two strings are anagram or not.
+		
+		//Solution 1:
+		isAnagram(s1, s2);
+		
+
+	}
+	
+	public static void isAnagram(String s1, String s2) {
+		
+		s1 = s1.replaceAll("\\s", s1.toLowerCase());
+		s2 = s2.replaceAll("\\s", s2.toLowerCase());
+		
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
+		
+		if(s1.length() != s2.length()) {
+			System.out.println("The given Strings are not an Anagram");
+		}
+		
+		for(char c : s1.toCharArray()) {
+			map.put(c, map.getOrDefault(c, 0)+1);
+		}
+		for(char x : s2.toCharArray()) {
+			map.put(x, map.getOrDefault(x, 0)-1);
+		}
+	}
+
+}

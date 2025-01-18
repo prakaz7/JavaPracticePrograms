@@ -1,0 +1,12 @@
+
+public class AnagramsCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s1 = "Listen";
+		String s2 = "Silent";
+
+	}
+
+}
