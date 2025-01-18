@@ -1,0 +1,19 @@
+
+public class ShiftOddAndEvenNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int array[] = {1,2,3,4,5,6,7,8,9,0};
+		
+		//To store the even numbers at the left of array and odd numbers at the right of array.
+		
+		//Solution 1 - Brute force.
+		bruteforce(array);
+
+	}
+	
+	public static void bruteforce(int[] arr) {
+		
+	}
+
+}
